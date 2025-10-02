@@ -1,6 +1,5 @@
 /* CONTENEDOR PRINCIPAL HTML
    Ancho total: 1400px
-   - Contenido: 1400px
 */
 html{
     width: 1400px;
@@ -15,7 +14,6 @@ img{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
     border-radius: 5px; 
 }
-
 /*************************************************
                 HEADER
  *************************************************/
@@ -32,10 +30,9 @@ header{
 }
 
 /* TÍTULO - Elemento del encabezado
-   Dimensiones variables por display: inline-block
    - Padding: 10px arriba/abajo, 20px izquierda/derecha
    - Margin-left: 50px
-   - Border-radius: 10px (visual, no afecta tamaño de caja)
+   - Border-radius: 10px 
 */
 #titulo {
     display: inline-block;
@@ -46,11 +43,10 @@ header{
     padding: 10px 20px;
     border-radius: 10px;
     margin-left: 50px;
-    vertical-align: middle;  
+    vertical-align: middle;   /*  quede centrado verticalmente con respecto a su línea */
 }
 
-/* LOGO - Contenedor del logo
-   Dimensiones variables por display: inline-block
+/* LOGO - Contenedor logo
    - Margin-left: 100px
 */
 #logo {
@@ -59,7 +55,7 @@ header{
     margin-left: 100px;
 }
 
-/* LOGO IMG - Imagen del logo
+/* LOGO IMG
    Alto: 200px
    Ancho: 300px
 */
@@ -72,9 +68,9 @@ header{
                 NAV
  *************************************************/
 
-/* NAV - Barra de navegación principal
-   Ancho total: heredado de html (1400px)
-   Alto: determinado por los enlaces internos (padding 15px * 2 = aprox 30px + texto)
+/* NAV - Barra de navegación 
+   Ancho total: html (1400px)
+   Alto: determinado por los enlaces 
 */
 nav{
     background-color: #3d6b2a;
@@ -85,7 +81,7 @@ nav{
    Ancho total por enlace: 346px
    - Contenido: 346px
    - Padding: 15px arriba/abajo, 0 izquierda/derecha
-   Total de 4 enlaces: 346px × 4 = 1384px (dentro de 1400px de nav)
+   Total de 4 enlaces: 346px × 4 = 1384px 
 */
 nav>a{
     float: left;
@@ -117,16 +113,15 @@ a{
                 MAIN
  *************************************************/
 
-/* MAIN - Contenedor principal del contenido
-   Ancho total: heredado de html (1400px)
-   Alto: determinado por el contenido interno
+/* MAIN -
+   Ancho total: html (1400px)
+   Alto: determinado por el contenido
 */
 main{
     background: linear-gradient(315deg, #ffffff 0%, #ffffff 30%, #4a7c59 70%, #2d5016 100%);
 }
 
-/* SECTION - Secciones genéricas
-   Dimensiones variables según el contexto
+/* SECTION -
    - Padding-bottom: 20px
    - Padding-top: 30px
 */
@@ -140,7 +135,7 @@ section{
     display: inline-block;
 }
 
-/* INFOSECTION - Sección de información principal (Introducción y Causas)
+/* INFOSECTION -(Introducción y Causas)
    Ancho total: 860px
    - Contenido: 800px
    - Padding: 30px en los 4 lados (30px × 2 = 60px adicionales)
@@ -181,7 +176,7 @@ li{
    - Contenido: 300px
    - Margin-top: 100px
    - Margin-right: 30px
-   Cálculo: 300px + 30px (margin-right) = 330px de espacio ocupado
+   Cálculo: 300px + 30px de margin-right = 330px 
 */
 .infoaside{
     width: 300px;
@@ -191,15 +186,11 @@ li{
     margin-right: 30px;   
 }
 
-/* ASIDE - Cajas laterales de información (arribaside y abajoaside)
-   Ancho total: 364px (heredado del contenedor .infoaside = 300px + margin 30px × 2)
-   - Contenido: 300px (del padre .infoaside)
-   - Padding-top: 40px
+/* ASIDE - (arribaside y abajoaside)
+
    - Padding-bottom: 40px
    - Border: 2px en los 4 lados (2px × 2 = 4px adicionales)
    - Margin: 30px en los 4 lados
-   Cálculo: 300px + 2px (izq) + 2px (der) + 30px (margin-izq) + 30px (margin-der) = 364px
-   Alto: variable por contenido + 40px (arriba) + 40px (abajo) + 2px (arriba) + 2px (abajo) + 30px (margin-arriba) + 30px (margin-abajo)
 */
 aside{
     border: 2px solid;
@@ -224,12 +215,13 @@ aside img{
                 FOOTER
  *************************************************/
 
-/* FOOTER - Pie de página
-   Ancho total: heredado de html (1400px)
-   Alto: variable por contenido + padding-top 20px + padding-bottom del párrafo
+/* FOOTER - 
+   Ancho total: html (1400px)
+   Alto: variable por contenido + padding-top 20px + padding-bottom del parrafo
    - Padding-top: 20px
 */
 footer{
+    height: 150px;
     padding-top: 20px;
     color: aliceblue;
     background-color: rgba(58, 58, 60);
@@ -250,8 +242,7 @@ footer p{
             PAGINA ---------------  2 cambioClimatico2
  *************************************************************************************/
 
-/* EFECTOS Y SOLUCIONES - Secciones de la página 2
-   Heredan dimensiones de section general
+/* EFECTOS Y SOLUCIONES - 
    - Padding-top: 80px (sobreescribe los 30px de section)
    - Padding-left: 30px
    - Más padding-bottom de section: 20px
@@ -265,18 +256,19 @@ footer p{
                 TABLE 
  *************************************************/
 
-/* TABLE - Tabla de efectos del cambio climático
-   Ancho total: 100% del contenedor padre (heredado de main = 1400px)
-   - Margin: 30px arriba/abajo, 0 izquierda/derecha
+/* TABLE - Efectos del cambio climático
+   Ancho contenido: 1354px
+   - Margen: 30px arriba/abajo, 0 izquierda/derecha
+   Cálculo de el  ancho: 1354px  + 2*23px de padding/margen interno aproximadamente = 1400px
 */
 table {
-    width: 100%;
+    width: 1354px;
     border-collapse: collapse;
     margin: 30px 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* TH - Encabezados de tabla
+/* TH - Encabezados 
    - Padding: 12px arriba/abajo, 15px izquierda/derecha
    - Border: 1px en los 4 lados
 */
@@ -289,7 +281,7 @@ th {
     border: 1px solid #1a3009;
 }
 
-/* TD - Celdas de tabla
+/* TD - Celdas 
    - Padding: 12px arriba/abajo, 15px izquierda/derecha
    - Border: 1px en los 4 lados
 */
@@ -324,7 +316,6 @@ td, th {
 .riesgo {
     font-weight: bold;
     text-align: center;
-    text-transform: uppercase;
     font-size: 13px;
     border-radius: 4px;
 }
@@ -376,13 +367,12 @@ td, th {
  *************************************************/
 
 
-/* CONTENIDO-COLUMNAS - Contenedor de las dos columnas
-   Ancho total: 1400px (igual que html)
-   - Contenido: 1400px
+/* CONTENIDO-COLUMNAS - Soluciones y Formulario 
+   Ancho total: 1400px 
    Distribución interna:
    - Columna izquierda: 880px (850px + 30px padding-right)
    - Columna derecha: 380px (350px + 30px margin-right)
-   - Espacio restante: 140px entre columnas
+   - Espacio   entre columnas 140px
    Total: 880px + 380px + 140px = 1400px
 */
 .contenido-columnas {
@@ -394,7 +384,7 @@ td, th {
    Ancho total: 880px
    - Contenido: 850px
    - Padding-right: 30px
-   Cálculo: 850px + 30px (padding-right) = 880px
+   Cálculo: 850px + 30px del padding-right = 880px
 */
 .columna-izquierda {
     float: left;
@@ -407,7 +397,7 @@ td, th {
    - Contenido: 350px
    - Margin-right: 30px
    - Margin-top: 200px
-   Cálculo: 350px + 30px (margin-right) = 380px
+   Cálculo: 350px + 30px  de margin-right = 380px
 */
 .columna-derecha {
     float: right;
@@ -416,14 +406,6 @@ td, th {
     margin-top: 200px; 
 }
 
-/* FORMULARIO FIELDSET - Marco del formulario
-   Ancho total: 390px (heredado de .columna-derecha = 350px + padding 20px × 2)
-   - Contenido: 350px (del padre .columna-derecha)
-   - Padding: 20px en los 4 lados (20px × 2 = 40px adicionales)
-   - Border: 2px en los 4 lados (2px × 2 = 4px adicionales)
-   Cálculo: 350px + 20px (izq) + 20px (der) + 2px (izq) + 2px (der) = 394px
-   Alto: variable por contenido + 20px (arriba) + 20px (abajo) + 2px (arriba) + 2px (abajo)
-*/
 #formulario fieldset {
     background-color: rgba(255, 255, 255, 0.95);
     border: 2px solid #4a7c59;
@@ -455,8 +437,8 @@ td, th {
    Ancho total: 316px
    - Contenido: 300px
    - Padding: 8px en los 4 lados (8px × 2 = 16px adicionales)
-   - Border: 2px en los 4 lados (pero no se suma al ancho total por defecto) 
-   Cálculo: 300px + 8px (izq) + 8px (der) = 316px
+   - Border: 2px en los 4 lados 
+   Cálculo: 300px + 8px izquierda + 8px derecha = 316px
 */
 #formulario input[type="email"],
 #formulario input[type="date"],
@@ -476,7 +458,6 @@ td, th {
 #formulario input[type="radio"] + label,
 #formulario input[type="checkbox"] + label {
     display: inline;
-    font-weight: normal;
     margin-bottom: 5px;
 }
 
