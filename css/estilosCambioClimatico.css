@@ -65,7 +65,7 @@ nav{
 
 /* Cada enlace mide 346px de ancho
    Padding: 15px arriba/abajo
-   Son 4 enlaces: 346px × 4 = 1384px 
+   4 enlaces: 346px × 4 = 1384px 
 */
 nav>a{
     float: left;
@@ -213,7 +213,7 @@ footer p{
  *************************************************************************************/
 
 /* Efectos y soluciones:
-   - Padding-top: 80px (en vez de los 30px normales de section)
+   - Padding-top: 80px 
    - Padding-left: 30px
 */
 #efectos, #soluciones{
