@@ -1,6 +1,4 @@
-/* CONTENEDOR PRINCIPAL HTML
-   Ancho total: 1400px
-*/
+/* La pagina entera mide 1400px de ancho */
 html{
     width: 1400px;
     margin: auto;
@@ -18,18 +16,14 @@ img{
                 HEADER
  *************************************************/
 
-/* HEADER - Caja principal del encabezado
-   Alto total: 200px
-   - Contenido: 200px
-   Ancho: html (1400px)
-*/
+/* El header mide 200px de alto y ocupa todo el ancho (1400px) */
 header{
     height: 200px;
     text-align: center;
     background: linear-gradient(90deg, #2d5016 0%, #4a7c59 30%, #ffffff 70%, #ffffff 100%);
 }
 
-/* TÍTULO - Elemento del encabezado
+/* El titulo tiene:
    - Padding: 10px arriba/abajo, 20px izquierda/derecha
    - Margin-left: 50px
    - Border-radius: 10px 
@@ -46,19 +40,14 @@ header{
     vertical-align: middle;   /*  quede centrado verticalmente con respecto a su línea */
 }
 
-/* LOGO - Contenedor logo
-   - Margin-left: 100px
-*/
+/* El logo tiene margin-left de 100px */
 #logo {
     display: inline-block;
     vertical-align: middle; 
     margin-left: 100px;
 }
 
-/* LOGO IMG
-   Alto: 200px
-   Ancho: 300px
-*/
+/* La imagen del logo mide 200px alto x 300px ancho */
 #logo img {
     height: 200px;
     width: 300px;
@@ -68,20 +57,15 @@ header{
                 NAV
  *************************************************/
 
-/* NAV - Barra de navegación 
-   Ancho total: html (1400px)
-   Alto: determinado por los enlaces 
-*/
+/* Barra de menu, ocupa todo el ancho (1400px) */
 nav{
     background-color: #3d6b2a;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* NAV > A - Enlaces de navegación
-   Ancho total por enlace: 346px
-   - Contenido: 346px
-   - Padding: 15px arriba/abajo, 0 izquierda/derecha
-   Total de 4 enlaces: 346px × 4 = 1384px 
+/* Cada enlace mide 346px de ancho
+   Padding: 15px arriba/abajo
+   Son 4 enlaces: 346px × 4 = 1384px 
 */
 nav>a{
     float: left;
@@ -113,18 +97,12 @@ a{
                 MAIN
  *************************************************/
 
-/* MAIN -
-   Ancho total: html (1400px)
-   Alto: determinado por el contenido
-*/
+/* El main ocupa todo el ancho (1400px) */
 main{
     background: linear-gradient(315deg, #ffffff 0%, #ffffff 30%, #4a7c59 70%, #2d5016 100%);
 }
 
-/* SECTION -
-   - Padding-bottom: 20px
-   - Padding-top: 30px
-*/
+/* Las secciones tienen padding-bottom 20px y padding-top 30px */
 section{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding-bottom: 20px;
@@ -135,12 +113,9 @@ section{
     display: inline-block;
 }
 
-/* INFOSECTION -(Introducción y Causas)
-   Ancho total: 860px
-   - Contenido: 800px
-   - Padding: 30px en los 4 lados (30px × 2 = 60px adicionales)
-   - Margin-bottom: 20px
-   Cálculo: 800px + 30px (izq) + 30px (der) = 860px
+/* Caja de informacion (introduccion y causas)
+   Mide 800px de ancho + 30px padding cada lado = 860px total
+   Margin-bottom: 20px
 */
 .infosection{
     width: 800px;
@@ -171,12 +146,10 @@ li{
                 ASIDE
  *************************************************/
 
-/* INFOASIDE - Contenedor de los asides
-   Ancho total: 360px
-   - Contenido: 300px
-   - Margin-top: 100px
-   - Margin-right: 30px
-   Cálculo: 300px + 30px de margin-right = 330px 
+/* Caja lateral mide 300px de ancho
+   Margin-top: 100px
+   Margin-right: 30px
+   Total: 300px + 30px margin = 330px 
 */
 .infoaside{
     width: 300px;
@@ -186,11 +159,10 @@ li{
     margin-right: 30px;   
 }
 
-/* ASIDE - (arribaside y abajoaside)
-
+/* Los aside tienen:
    - Padding-bottom: 40px
-   - Border: 2px en los 4 lados (2px × 2 = 4px adicionales)
-   - Margin: 30px en los 4 lados
+   - Border: 2px por todos lados
+   - Margin: 30px por todos lados
 */
 aside{
     border: 2px solid;
@@ -215,10 +187,8 @@ aside img{
                 FOOTER
  *************************************************/
 
-/* FOOTER - 
-   Ancho total: html (1400px)
-   Alto: variable por contenido + padding-top 20px + padding-bottom del parrafo
-   - Padding-top: 20px
+/* Footer mide 150px de alto y todo el ancho (1400px)
+   Padding-top: 20px
 */
 footer{
     height: 150px;
@@ -242,10 +212,9 @@ footer p{
             PAGINA ---------------  2 cambioClimatico2
  *************************************************************************************/
 
-/* EFECTOS Y SOLUCIONES - 
-   - Padding-top: 80px (sobreescribe los 30px de section)
+/* Efectos y soluciones:
+   - Padding-top: 80px (en vez de los 30px normales de section)
    - Padding-left: 30px
-   - Más padding-bottom de section: 20px
 */
 #efectos, #soluciones{
     padding-top: 80px;
@@ -256,10 +225,9 @@ footer p{
                 TABLE 
  *************************************************/
 
-/* TABLE - Efectos del cambio climático
-   Ancho contenido: 1354px
-   - Margen: 30px arriba/abajo, 0 izquierda/derecha
-   Cálculo de el  ancho: 1354px  + 2*23px de padding/margen interno aproximadamente = 1400px
+/* La tabla mide 1354px de ancho
+   Margin: 30px arriba/abajo
+   Con padding y bordes llega a 1400px aprox
 */
 table {
     width: 1354px;
@@ -268,9 +236,9 @@ table {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* TH - Encabezados 
-   - Padding: 12px arriba/abajo, 15px izquierda/derecha
-   - Border: 1px en los 4 lados
+/* Cabeceras de tabla
+   Padding: 12px arriba/abajo, 15px izquierda/derecha
+   Border: 1px por todos lados
 */
 th {
     font-size: 16px;
@@ -281,9 +249,9 @@ th {
     border: 1px solid #1a3009;
 }
 
-/* TD - Celdas 
-   - Padding: 12px arriba/abajo, 15px izquierda/derecha
-   - Border: 1px en los 4 lados
+/* Celdas de tabla
+   Padding: 12px arriba/abajo, 15px izquierda/derecha
+   Border: 1px por todos lados
 */
 td {
     border: 1px solid #d4d4d4;
@@ -366,13 +334,10 @@ td, th {
                 FORMULARIO EN COLUMNAS
  *************************************************/
 
-
-/* CONTENIDO-COLUMNAS - Soluciones y Formulario 
-   Ancho total: 1400px 
-   Distribución interna:
-   - Columna izquierda: 880px (850px + 30px padding-right)
-   - Columna derecha: 380px (350px + 30px margin-right)
-   - Espacio   entre columnas 140px
+/* Contenedor de las dos columnas, mide 1400px total
+   Columna izquierda: 850px + 30px padding = 880px
+   Columna derecha: 350px + 30px margin = 380px
+   Espacio entre columnas: 140px
    Total: 880px + 380px + 140px = 1400px
 */
 .contenido-columnas {
@@ -380,11 +345,10 @@ td, th {
     overflow: auto;  /* Asegurar que el  contenido  permanezca dentro del contenedor */
 }
 
-/* COLUMNA-IZQUIERDA - Columna de soluciones
-   Ancho total: 880px
-   - Contenido: 850px
-   - Padding-right: 30px
-   Cálculo: 850px + 30px del padding-right = 880px
+/* Columna izquierda (soluciones)
+   Mide 850px de ancho
+   Padding-right: 30px
+   Total: 850px + 30px = 880px
 */
 .columna-izquierda {
     float: left;
@@ -392,12 +356,11 @@ td, th {
     padding-right: 30px;  
 }
 
-/* COLUMNA-DERECHA - Columna del formulario
-   Ancho total: 380px
-   - Contenido: 350px
-   - Margin-right: 30px
-   - Margin-top: 200px
-   Cálculo: 350px + 30px  de margin-right = 380px
+/* Columna derecha (formulario)
+   Mide 350px de ancho
+   Margin-right: 30px
+   Margin-top: 200px
+   Total: 350px + 30px = 380px
 */
 .columna-derecha {
     float: right;
@@ -433,12 +396,10 @@ td, th {
     display: block;
 }
 
-/* FORMULARIO INPUTS - Campos de entrada
-   Ancho total: 316px
-   - Contenido: 300px
-   - Padding: 8px en los 4 lados (8px × 2 = 16px adicionales)
-   - Border: 2px en los 4 lados 
-   Cálculo: 300px + 8px izquierda + 8px derecha = 316px
+/* Campos del formulario miden 300px de ancho
+   Padding: 8px por todos lados
+   Border: 2px por todos lados
+   Total: 300px + 8px izq + 8px der = 316px
 */
 #formulario input[type="email"],
 #formulario input[type="date"],
@@ -469,7 +430,7 @@ td, th {
 #formulario button {
     margin: 0 5px;
     padding: 8px 15px;
-    border: 2px solid transparent;
+    border: 2px solid transparent; /* Crear transparente para mostrarlo por animacion */
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
